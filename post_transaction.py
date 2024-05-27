@@ -14,7 +14,8 @@ def main():
         "signature": "signature_sample"
     }
     
-    url = "http://127.0.0.1:8010/transaction_pool/"
+    # url = "http://127.0.0.1:8010/transaction_pool/"
+    url = "https://block-chain-35tt.onrender.com/transaction_pool"
     res = requests.post(url, json.dumps(transaction))
     
     print(res.json())
